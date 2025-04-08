@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.custom-toast {
+  background: linear-gradient(45deg, #1e3a8a, #3b82f6) !important; /* ✅ Blue gradient */
+  color: white !important;
+  font-size: 16px !important;
+  border-radius: 10px !important;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.custom-toast-body {
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+}
+
+.Toastify__toast-icon {
+  color: #facc15 !important; /* ✅ Change icon color */
+}
+
+.Toastify__progress-bar {
+  background: #facc15 !important; /* ✅ Yellow progress bar */
+}
